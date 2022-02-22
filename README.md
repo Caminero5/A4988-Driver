@@ -83,7 +83,7 @@ to get away with finding the correct version and importing it with the gradle
 interface, or a `.jar` but this method is un-tested
 
 If you are going to do this from a `.jar` or jars the correct ones will be located in
-`target/dependency-jars`
+`target/dependency-jars` 
 
 
 ### Raspberry Pi models supported
@@ -139,7 +139,7 @@ motor.rotate(true, false, false, false, "21", "16", "19", "20", "26", "0.005", "
 
 These are the parameters that are needed
 ```java
-(boolean clockwise, boolean ms1, boolean ms2, boolean ms3, String STEP, String MS1, String MS2, String MS3, String DIR, String step_delay, String btn_pin)
+boolean clockwise, boolean ms1, boolean ms2, boolean ms3, String STEP, String MS1, String MS2, String MS3, String DIR, String step_delay, String btn_pin
 ```
 
 
