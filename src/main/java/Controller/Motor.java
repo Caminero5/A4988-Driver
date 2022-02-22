@@ -6,6 +6,7 @@ public class Motor{
     public void rotate(boolean clockwise, boolean ms1, boolean ms2, boolean ms3, String STEP, String MS1, String MS2, String MS3, String DIR, String step_delay, String btn_pin) throws IOException {
 
         System.out.println("Clockwise: " + clockwise + " MS1: " + ms1 + " MS2:" + ms2 + " MS3:" + ms3);
+        //checks if the value is true or false then sets the pin to that
         if(clockwise) {
             Gpio_On clockwiseOn = new Gpio_On(DIR, "DIR on");
             clockwiseOn.begin(DIR, "DIR on");
@@ -49,6 +50,8 @@ public class Motor{
         System.out.println("Set all the pin states");
 
         GPIO_On_Till_Press gpioOnTillPress = new GPIO_On_Till_Press(STEP, btn_pin, step_delay);
+
+        //starts motor thread
         gpioOnTillPress.begin(STEP, btn_pin, step_delay);
     }
 }
