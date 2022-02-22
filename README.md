@@ -82,7 +82,7 @@ There is currently no support for anything other than maven. You might be able
 to get away with finding the correct version and importing it with the gradle
 interface, or a `.jar` but this method is un-tested
 
-If you are going to do this the `.jar`s from that is located in
+If you are going to do this from a `.jar` or jars the correct ones will be located in
 `target/dependency-jars`
 
 
@@ -129,7 +129,7 @@ motor class like this
 `Motor varName = new Motor();`
 
 after this you can call the rotate function which will rotate the stepper motor until
-a button as been pressed (the user selects the button pin)
+a button has been pressed (the user selects the button pin)
 
 Example
 ```java
