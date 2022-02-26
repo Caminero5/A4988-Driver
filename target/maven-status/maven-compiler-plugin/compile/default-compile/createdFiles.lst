@@ -1,5 +1,6 @@
 Controller/Gpio_Off.class
 Controller/GPIO_On_Till_Press.class
 Controller/Debug.class
+Controller/GPIO_On_Till_Press_LED.class
 Controller/Motor.class
 Controller/Gpio_On.class
